@@ -1,0 +1,39 @@
+.contact-section {
+    border-bottom: $border-2;
+    background-color: $primary-purple;
+
+    .contact-wrapper {
+        padding: $p-100;
+        text-align: center;
+
+        .contact-text {
+            font-size: 3em;
+            font-family: 'Source Code Pro';
+            font-weight: 600;
+            margin-bottom: $p-50;
+        }
+
+        .btn {
+            width: 250px;
+            margin: 0 auto;
+            border: $border-2;
+            box-shadow: 10px 10px 0 $black;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-section {
+        .contact-wrapper {
+            padding: $p-50;
+
+            .contact-text {
+                font-size: 2em;
+            }
+
+            .btn {
+                width: 200px;
+            }
+        }
+    }
+}

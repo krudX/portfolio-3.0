@@ -1,0 +1,67 @@
+header {
+    .logo-wrapper {
+        padding: 0 $p-20;
+        // border-bottom: 2px solid $black;
+        .logo {
+            // font-family: 'Coda-Regular';
+            font-family: 'Source Code Pro';
+            font-size: 9.5em;
+            text-transform: uppercase;
+            font-weight: 700;
+            text-align: center;
+            line-height: 1em;
+        }
+    }
+
+    .menu-wrapper {
+        display: flex;
+        align-items: center;
+        border-top: $border-2;
+        border-bottom: $border-2;
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            padding: 0 $p-50;
+            width: 70%;
+            
+            .menu-item {
+                margin: 0 $p-20;
+                a {
+                padding: $p-20 0;
+                }
+            }
+        }
+
+        .header-btn {
+            width: 15%;
+            border-left: $border-2;
+            border-right: $border-2;
+        }
+
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        .logo-wrapper {
+            padding: $p-10 $p-20;
+
+            .logo {
+                font-size: 3em;
+            }
+        }
+        .menu-wrapper {
+            flex-direction: column;
+
+            .nav-menu {
+                width: 100%;
+                padding: $p-10 $p-50;
+            }
+
+            .header-btn {
+                display: none;
+            }
+        }
+    }
+}

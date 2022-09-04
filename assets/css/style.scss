@@ -1,0 +1,83 @@
+
+
+$black: #000000;
+$primary-white: #FFFFFF;
+$primary-black: #575151;
+$primary-blue: #a1eafb;
+$primary-yellow: #ffdc7d;
+$primary-pink: #ff9dc4;
+$primary-purple: #a49df8;
+$primary-green: rgb(159, 255, 140);
+
+
+$border-1 : 1px solid $black;
+$border-2 : 2px solid $black;
+
+@import './fonts';
+@import './helper';
+@import './header';
+@import './hero';
+@import './misc';
+@import './projects';
+@import './contact';
+
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    font-size: 16px;
+    min-height: 100vh;
+    width: 100vw;
+
+    &.loaded {
+		overflow-y: auto;
+	}
+}  
+
+main {
+    min-height: 100vh;
+    max-width: 1366px;
+    margin: 0 auto;
+    // border-left: 2px solid $black;
+    // border-right: 2px solid $black;
+    background-color: $primary-white;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+.btn {
+    padding: $p-10 $p-30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-outline {
+    background-color: $primary-white;
+    color: $black;
+}
+
+.btn-fill {
+    background-color: $black;
+    color: $primary-white;
+}
+
+@media (max-width: 480px) {
+    main {
+        max-width: 100vw;
+    }
+}
